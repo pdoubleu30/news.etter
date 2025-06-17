@@ -41,11 +41,13 @@
           <p class= "email">Email address</p>
           <p class= "emailError"> Valid email required</p>
         </div>
-        <input placeholder="email@company.com">
-        <input class = "inputError" placeholder="ash#loremcompany.com">
-        <div class="buttonContain">
-          <button class="mButton">Subscribe to monthly newsletter</button>
-        </div>
+        <form id = "form">
+          <input id = "email" name = "email" type = "text" placeholder="email@company.com">
+          <input id = "emailTwo" name = "emailTwo" type = "text" class = "inputError" placeholder="ash#loremcompany.com">
+          <div class="buttonContain">
+            <button id="submit" type = "submit" class="mButton">Subscribe to monthly newsletter</button>
+          </div>
+        </form>
       </section>
     </div>
     <img class="newsletter__img2" src="/assets/images/illustration-sign-up-desktop.svg" alt="computer images" />
