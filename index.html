@@ -11,7 +11,7 @@
 </head>
 <body>
   <main>
-    <div class = "mainPage">
+    <div id ="mainPage" class = "mainPage">
       <div class="newsletter">
         <img class="newsletter__img" src="/assets/images/illustration-sign-up-mobile.svg" alt="computer images" >
       </div>
@@ -39,11 +39,11 @@
       -->
         <div class="emailContainer">
           <p class= "email">Email address</p>
-          <p class= "emailError"> Valid email required</p>
+          <p class= "emailError" id = "emailError"> Valid email required</p>
         </div>
         <form id = "form">
           <input id = "email" name = "email" type = "text" placeholder="email@company.com">
-          <input id = "emailTwo" name = "emailTwo" type = "text" class = "inputError" placeholder="ash#loremcompany.com">
+          <input id = "inputError" name = "emailTwo" type = "text" class = "inputError" placeholder="ash#loremcompany.com">
           <div class="buttonContain">
             <button id="submit" type = "submit" class="mButton">Subscribe to monthly newsletter</button>
           </div>
@@ -51,7 +51,7 @@
       </section>
     </div>
     <img class="newsletter__img2" src="/assets/images/illustration-sign-up-desktop.svg" alt="computer images" />
-    <div class = "success">
+    <div id = "success" class = "success">
       <img class="successImg" src="/assets/images/icon-success.svg" />
       <h1 class="thanks">Thanks for subscribing!</h1>
       <p class="confirmation">A confirmation email has been sent to <b>ash@lorecompany.com.</b> Please open it and click the button inside to confirm your subscription</p>
