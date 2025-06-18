@@ -102,6 +102,19 @@ h1 {
 }
 
 
+.custom-email {
+  padding: 1em;
+  width: 100%;
+  max-inline-size: 550px;
+  border-radius: 10px;
+  border: .5px solid red;
+  color: red;
+  background-color: #ffe7e6;
+}
+  
+
+
+
 .emailError {
   display: none;
   font-size: .75rem;
@@ -112,6 +125,7 @@ h1 {
   padding-bottom: .5em;
   padding-left: 11.75em;
 }
+  
 
 .emailContainer {
   display: flex;
@@ -125,6 +139,7 @@ input {
   border: .5px solid rgb(205, 198, 198);
 }
 
+/*
 .inputError {
   display: none;
   padding: 1em;
@@ -134,7 +149,10 @@ input {
   border: .5px solid red;
   color: red;
   background-color: #ffe7e6;
+  
 }
+
+*/
 
 
 button {
