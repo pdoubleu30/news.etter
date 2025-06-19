@@ -188,10 +188,11 @@ button {
   padding: 1em 0em;
 }
 
+
 .success button {
   margin-top: 18em;
 }
-
+  
 .success p {
   line-height: 150%;
   font-size: 1rem;
@@ -207,21 +208,24 @@ button {
 
 @media (min-width: 670px) {
   .newsletter__img {
-    display: block;
-  }
-  .newsletter__img2 {
     display: none;
+  }
+
+  /* turn the blow display to flex when done*/
+  .newsletter__img2 {
+    display: flex;
     padding: 2em 0em;
   }
 
+ /* turn the blow display to flex when done*/
   main {
-    display: none;
+    display: flex;
     place-content: center;
-    overflow: visible;
-    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 0em 1em;
 
   }
-
 
   .content {
   width: 90%;
@@ -236,26 +240,21 @@ button {
   font-weight: var(--fw-bold);
   padding-top: 1.5em;
   padding-bottom: .5em;
-  padding-left: 17em;
+  padding-left: 14.5em;
 }
 
-/*html {
-  background-color: #1e1e1e;
-}
-  */
 
 .success {
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: white;
   border-radius: 10px;
   width: 100%;
-  max-inline-size: 500px;
+  max-inline-size: 504px;
+  height: 520px;
   border: 1px solid grey;
-  padding: 0em 4em;
 }
 
 
@@ -281,7 +280,8 @@ button {
   margin-top: 5em;
 }
 
-
-
+h1 {
+  font-size: 3.5rem;
+}
 
 }
