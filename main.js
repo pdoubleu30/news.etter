@@ -15,6 +15,7 @@ const handleSubmit = (e) => {
     } else {
     document.getElementById('success').style.display = "block";
     document.getElementById('mainPage').style.display = "none";
+    document.getElementById('newsTwo').style.display = "none";
     };
     //below code taks input content and displays it on the email on the success page
     userInput.textContent = email.value;
