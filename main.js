@@ -34,7 +34,6 @@ document.getElementById('newsTwo').style.display = "block";
 
 form.reset();
 
-userInput.textContent = "";
 document.getElementById('emailError').style.display = "none";
 eAddress.classList.remove("custom-email");
 
