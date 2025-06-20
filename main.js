@@ -2,7 +2,6 @@ const form = document.getElementById('form');
 const eAddress = document.getElementById('email');
 const userInput = document.getElementById('userInput');
 const dButton = document.getElementById('dButton');
-const mediaQuery = window.matchMedia("(min-width: 670px)");
 
 const emailRegExp = /^[\w.!#$%&'*+/=?^`{|}~-]+@[a-z\d-]+(?:\.[a-z\d-]+)*$/i;
 
@@ -33,10 +32,14 @@ document.getElementById('success').style.display = "none";
 document.getElementById('mainPage').style.display = "block";
 document.getElementById('newsTwo').style.display = "block";
 
-if (mediaQuery) {
-document.getElementById('newsTwo').style.display = "none";
+form.reset();
+
+userInput.textContent = "";
+document.getElementById('emailError').style.display = "none";
+eAddress.classList.remove("custom-email");
 
 }
+
 
 
 form.addEventListener('submit', handleSubmit);
