@@ -2,6 +2,7 @@ const form = document.getElementById('form');
 const eAddress = document.getElementById('email');
 const userInput = document.getElementById('userInput');
 const dButton = document.getElementById('dButton');
+const mediaQuery = window.matchMedia("(min-width: 670px)");
 
 const emailRegExp = /^[\w.!#$%&'*+/=?^`{|}~-]+@[a-z\d-]+(?:\.[a-z\d-]+)*$/i;
 
@@ -29,6 +30,11 @@ console.log(data);
 
 const closingSubmit = (e) => {
 document.getElementById('success').style.display = "none";
+document.getElementById('mainPage').style.display = "block";
+document.getElementById('newsTwo').style.display = "block";
+
+if (mediaQuery) {
+document.getElementById('newsTwo').style.display = "none";
 
 }
 
