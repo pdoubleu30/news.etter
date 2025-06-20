@@ -221,7 +221,7 @@ button {
   main {
     display: flex;
     place-content: center;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 20px;
     padding: 0em 1em;
 
@@ -252,9 +252,8 @@ button {
   background-color: white;
   border-radius: 10px;
   width: 100%;
-  max-inline-size: 504px;
+  max-inline-size: 400px;
   height: 520px;
-  border: 1px solid grey;
 }
 
 
@@ -277,7 +276,7 @@ button {
 }
 
 .success button {
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 h1 {
